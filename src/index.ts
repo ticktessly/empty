@@ -1,5 +1,5 @@
 import { drizzle } from "drizzle-orm/node-postgres";
-import { customers } from "../drizzle/schema";
+import { customers } from "./db/schema";
 import { eq } from "drizzle-orm";
 const url = process.env.DATABASE_URL!
 const db = drizzle(url);
